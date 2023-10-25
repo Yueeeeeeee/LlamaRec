@@ -12,7 +12,7 @@ We propose a two-stage framework using large language models for ranking-based r
 Pytorch, transformers, peft, bitsandbytes etc. For our detailed running environment see requirements.txt
 
 
-## How to run LRURec
+## How to run LlamaRec
 The command below starts the training of our retriever model LRURec
 ```bash
 python train_retriever.py
