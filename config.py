@@ -17,11 +17,6 @@ def set_template(args):
         dataset_code = {'1': 'ml-100k', 'b': 'beauty', 'g': 'games'}
         args.dataset_code = dataset_code[input('Input 1 for ml-100k, b for beauty and g for games: ')]
 
-    if args.model_code == None:
-        print('********************* Model Selection *********************')
-        model_codes = {'b': 'bert', 'l': 'lru', 'n': 'narm', 's':'sas'}
-        args.model_code = model_codes[input('Input retriever model, b for BERT4Rec, l for LRU, n for NARM and s for SASRec: ')]
-
     if args.dataset_code == 'ml-100k':
         args.bert_max_len = 200
     else:

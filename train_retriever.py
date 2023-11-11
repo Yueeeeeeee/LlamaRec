@@ -37,3 +37,12 @@ if __name__ == "__main__":
     args.model_code = 'lru'
     set_template(args)
     main(args, export_root=None)
+
+    # # searching best hyperparameters
+    # for decay in [0, 0.01]:
+    #     for dropout in [0, 0.1, 0.2, 0.3, 0.4, 0.5]:
+    #         args.weight_decay = decay
+    #         args.bert_dropout = dropout
+    #         args.bert_attn_dropout = dropout
+    #         export_root = EXPERIMENT_ROOT + '/' + args.model_code + '/' + args.dataset_code + '/' + str(decay) + '_' + str(dropout)
+    #         main(args, export_root=export_root)
